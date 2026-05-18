@@ -1,6 +1,15 @@
 const express = require('express');
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '.env') });
+// .env を UTF-8 で明示的に読み込む
+const fs = require('fs');
+const envPath = path.join(__dirname, '.env');
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf8');
+  envContent.split('\n').forEach(line => {
+    const [key, ...vals] = line.trim().split('=');
+    if (key && vals.length) process.env[key.trim()] = vals.join('=').trim();
+  });
+}
 const Anthropic = require('@anthropic-ai/sdk');
 
 const app = express();
@@ -8,6 +17,15 @@ const PORT = process.env.PORT || 3000;
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 app.use(express.json());
+
+// .env・機密ファイルへのHTTPアクセスをブロック
+app.use((req, res, next) => {
+  if (/\.(env|key|pem|secret)$/i.test(req.path) || req.path.includes('/.')) {
+    return res.status(403).end();
+  }
+  next();
+});
+
 app.use(express.static(path.join(__dirname, '..')));
 
 const SYSTEM_PROMPT = `あなたはAivoraのAIアシスタントです。Aivoraは「AIを活用した業務効率化コンサルティング」を提供する会社です。

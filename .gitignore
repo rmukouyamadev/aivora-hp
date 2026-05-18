@@ -1,3 +1,10 @@
 node_modules/
-hp/server/.env
+
+# 環境変数・機密情報（絶対にコミットしない）
+.env
+.env.*
+*.key
+*.pem
+*.secret
+
 参考キャプチャ/
