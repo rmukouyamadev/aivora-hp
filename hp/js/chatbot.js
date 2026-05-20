@@ -58,18 +58,34 @@ async function sendMessage() {
       body: JSON.stringify({ messages: history }),
     });
 
-    const data = await res.json();
+    // レスポンスのステータスをコンソールに出力（デバッグ用）
+    console.log('[Chatbot] status:', res.status);
+
+    // JSONでないレスポンスへの対応
+    const text = await res.text();
+    console.log('[Chatbot] response:', text);
+
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      typing.remove();
+      addMessage(`エラー (${res.status}): APIの応答が不正です。Vercelの設定をご確認ください。`, 'bot');
+      return;
+    }
+
     typing.remove();
 
-    if (data.error) {
-      addMessage('申し訳ありません。エラーが発生しました。しばらくしてから再度お試しください。', 'bot');
+    if (!res.ok || data.error) {
+      addMessage(`エラー (${res.status}): ${data.error || 'しばらくしてから再度お試しください。'}`, 'bot');
     } else {
       addMessage(data.content, 'bot');
       history.push({ role: 'assistant', content: data.content });
     }
-  } catch {
+  } catch (err) {
     typing.remove();
-    addMessage('通信エラーが発生しました。ページを再読み込みしてお試しください。', 'bot');
+    console.error('[Chatbot] fetch error:', err);
+    addMessage(`通信エラー: ${err.message}`, 'bot');
   }
 
   isLoading = false;
