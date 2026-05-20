@@ -96,12 +96,31 @@
         <div class="why-row__visual">
           <div class="why-row__illust why-row__illust--01">
             <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="90" fill="rgba(201,168,76,0.12)"/>
-              <circle cx="100" cy="75" r="30" stroke="#c9a84c" stroke-width="3"/>
-              <path d="M55 160c0-24.8 20.1-45 45-45s45 20.2 45 45" stroke="#c9a84c" stroke-width="3" stroke-linecap="round"/>
-              <path d="M130 90l10 10 20-20" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="140" cy="140" r="20" fill="rgba(201,168,76,0.15)" stroke="#c9a84c" stroke-width="2"/>
-              <path d="M133 140l5 5 9-9" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- 背景 -->
+              <circle cx="100" cy="100" r="90" fill="rgba(201,168,76,0.07)"/>
+              <!-- 伴走の道（点線） -->
+              <path d="M28 158 Q65 138 100 148 Q135 158 172 138" stroke="rgba(201,168,76,0.38)" stroke-width="2.5" stroke-dasharray="6 4" fill="none"/>
+              <!-- マイルストーン①達成 -->
+              <circle cx="52" cy="150" r="7" fill="rgba(201,168,76,0.18)" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M48.5 150l3 3 6-6" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- マイルストーン②達成 -->
+              <circle cx="100" cy="146" r="7" fill="rgba(201,168,76,0.18)" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M96.5 146l3 3 6-6" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- マイルストーン③未達（点線） -->
+              <circle cx="150" cy="136" r="7" fill="rgba(201,168,76,0.08)" stroke="#c9a84c" stroke-width="1.5" stroke-dasharray="3 2"/>
+              <!-- コンサルタント図（左・主） -->
+              <circle cx="76" cy="70" r="18" stroke="#c9a84c" stroke-width="2.5"/>
+              <path d="M43 120c0-18 15-32 33-32s33 14 33 32" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- クライアント図（右・サポート） -->
+              <circle cx="126" cy="72" r="13" stroke="#c9a84c" stroke-width="2" opacity="0.7"/>
+              <path d="M101 120c0-14 12-24 25-24s25 10 25 24" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+              <!-- 連携ライン -->
+              <path d="M94 82 L108 82" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 2.5"/>
+              <!-- スパークル（AI感） -->
+              <path d="M164 82 l3 6 6 3 -6 3 -3 6 -3 -6 -6 -3 6 -3z" fill="rgba(201,168,76,0.7)"/>
+              <path d="M33 94 l2 4 4 2 -4 2 -2 4 -2 -4 -4 -2 4 -2z" fill="rgba(201,168,76,0.5)"/>
+              <circle cx="158" cy="55" r="3" fill="rgba(201,168,76,0.5)"/>
+              <circle cx="44" cy="62" r="2" fill="rgba(201,168,76,0.4)"/>
             </svg>
           </div>
         </div>
@@ -118,13 +137,37 @@
         <div class="why-row__visual">
           <div class="why-row__illust why-row__illust--02">
             <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="90" fill="rgba(201,168,76,0.12)"/>
-              <rect x="40" y="60" width="50" height="40" rx="6" stroke="#c9a84c" stroke-width="3"/>
-              <rect x="110" y="60" width="50" height="40" rx="6" stroke="#c9a84c" stroke-width="2" stroke-dasharray="4 3"/>
-              <rect x="40" y="110" width="50" height="40" rx="6" stroke="#c9a84c" stroke-width="2" stroke-dasharray="4 3"/>
-              <rect x="110" y="110" width="50" height="40" rx="6" stroke="#c9a84c" stroke-width="3"/>
-              <circle cx="100" cy="100" r="10" fill="#c9a84c" opacity="0.3"/>
-              <path d="M96 100h8M100 96v8" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+              <!-- 背景 -->
+              <circle cx="100" cy="100" r="90" fill="rgba(201,168,76,0.07)"/>
+              <!-- 中央ハブ（AI） -->
+              <circle cx="100" cy="100" r="24" fill="rgba(201,168,76,0.18)" stroke="#c9a84c" stroke-width="2.5"/>
+              <circle cx="90" cy="97" r="4" fill="#c9a84c" opacity="0.8"/>
+              <circle cx="110" cy="97" r="4" fill="#c9a84c" opacity="0.8"/>
+              <circle cx="100" cy="110" r="4" fill="#c9a84c" opacity="0.8"/>
+              <path d="M90 97 L100 110 L110 97 M90 97 L110 97" stroke="#c9a84c" stroke-width="1.4" opacity="0.55"/>
+              <!-- 接続ライン -->
+              <line x1="100" y1="76" x2="100" y2="46" stroke="rgba(201,168,76,0.4)" stroke-width="1.8" stroke-dasharray="4 3"/>
+              <line x1="100" y1="124" x2="100" y2="154" stroke="rgba(201,168,76,0.4)" stroke-width="1.8" stroke-dasharray="4 3"/>
+              <line x1="76" y1="100" x2="46" y2="100" stroke="rgba(201,168,76,0.4)" stroke-width="1.8" stroke-dasharray="4 3"/>
+              <line x1="124" y1="100" x2="154" y2="100" stroke="rgba(201,168,76,0.4)" stroke-width="1.8" stroke-dasharray="4 3"/>
+              <!-- 上：オフィスビル -->
+              <rect x="83" y="26" width="34" height="22" rx="2" stroke="#c9a84c" stroke-width="2"/>
+              <rect x="88" y="30" width="8" height="7" rx="1" fill="rgba(201,168,76,0.25)"/>
+              <rect x="104" y="30" width="8" height="7" rx="1" fill="rgba(201,168,76,0.25)"/>
+              <rect x="93" y="40" width="14" height="8" rx="1" stroke="#c9a84c" stroke-width="1.5"/>
+              <!-- 下：ショップ -->
+              <rect x="83" y="152" width="34" height="20" rx="2" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M83 162 Q100 157 117 162" stroke="#c9a84c" stroke-width="2"/>
+              <rect x="90" y="164" width="20" height="8" rx="1" stroke="#c9a84c" stroke-width="1.5"/>
+              <!-- 左：工場 -->
+              <rect x="26" y="88" width="22" height="24" rx="2" stroke="#c9a84c" stroke-width="2"/>
+              <rect x="29" y="80" width="5" height="10" rx="1" stroke="#c9a84c" stroke-width="1.5"/>
+              <rect x="37" y="83" width="5" height="8" rx="1" stroke="#c9a84c" stroke-width="1.5"/>
+              <path d="M28 105 L47 105" stroke="#c9a84c" stroke-width="1.5"/>
+              <!-- 右：医療 -->
+              <rect x="152" y="88" width="22" height="24" rx="2" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M160 97h6M163 94v6" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="156" y="106" width="12" height="6" rx="1" stroke="#c9a84c" stroke-width="1.5"/>
             </svg>
           </div>
         </div>
@@ -141,10 +184,28 @@
         <div class="why-row__visual">
           <div class="why-row__illust why-row__illust--03">
             <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="90" fill="rgba(201,168,76,0.12)"/>
-              <path d="M50 150l25-35 20 20 20-30 35 45H50z" stroke="#c9a84c" stroke-width="3" stroke-linejoin="round" fill="rgba(201,168,76,0.1)"/>
-              <circle cx="150" cy="60" r="16" stroke="#c9a84c" stroke-width="3"/>
-              <path d="M143 60h14M150 53v14" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- 背景 -->
+              <circle cx="100" cy="100" r="90" fill="rgba(201,168,76,0.07)"/>
+              <!-- グラフ軸 -->
+              <path d="M36 165 L36 42 M36 165 L175 165" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M33 47 L36 42 L39 47" stroke="#c9a84c" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M170 162 L175 165 L170 168" stroke="#c9a84c" stroke-width="2" stroke-linejoin="round"/>
+              <!-- コスト棒（小・左） -->
+              <rect x="52" y="133" width="24" height="32" rx="2" fill="rgba(201,168,76,0.14)" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M64 149 v-8 M60 145 h8" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+              <!-- 効果棒（大・右） -->
+              <rect x="118" y="68" width="30" height="97" rx="2" fill="rgba(201,168,76,0.22)" stroke="#c9a84c" stroke-width="2.5"/>
+              <path d="M127 115 l5 5 10-10" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- 折れ線（上昇トレンド） -->
+              <path d="M52 148 L80 132 L112 112 L150 74" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- データポイント -->
+              <circle cx="52" cy="148" r="4.5" fill="#c9a84c"/>
+              <circle cx="80" cy="132" r="4.5" fill="#c9a84c"/>
+              <circle cx="112" cy="112" r="4.5" fill="#c9a84c"/>
+              <circle cx="150" cy="74" r="5" fill="#c9a84c"/>
+              <!-- 上昇アイコン -->
+              <circle cx="162" cy="56" r="17" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M162 65 L162 47 M156 53 L162 47 L168 53" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
         </div>
@@ -161,10 +222,29 @@
         <div class="why-row__visual">
           <div class="why-row__illust why-row__illust--04">
             <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="90" fill="rgba(201,168,76,0.12)"/>
-              <circle cx="100" cy="100" r="40" stroke="#c9a84c" stroke-width="3"/>
-              <path d="M100 70v30l20 12" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M60 55l8 8M140 55l-8 8M60 145l8-8M140 145l-8-8" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+              <!-- 背景 -->
+              <circle cx="100" cy="100" r="90" fill="rgba(201,168,76,0.07)"/>
+              <!-- 更新サークル矢印 -->
+              <path d="M100 36 A64 64 0 1 1 40 136" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M40 136 L26 118 L56 116" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <!-- 中央：AIニューラルネットワーク -->
+              <circle cx="100" cy="100" r="32" fill="rgba(201,168,76,0.12)" stroke="#c9a84c" stroke-width="2"/>
+              <!-- ニューロンノード -->
+              <circle cx="87" cy="92" r="5.5" fill="rgba(201,168,76,0.35)" stroke="#c9a84c" stroke-width="1.8"/>
+              <circle cx="113" cy="92" r="5.5" fill="rgba(201,168,76,0.35)" stroke="#c9a84c" stroke-width="1.8"/>
+              <circle cx="87" cy="110" r="5.5" fill="rgba(201,168,76,0.35)" stroke="#c9a84c" stroke-width="1.8"/>
+              <circle cx="113" cy="110" r="5.5" fill="rgba(201,168,76,0.35)" stroke="#c9a84c" stroke-width="1.8"/>
+              <circle cx="100" cy="101" r="6" fill="#c9a84c" opacity="0.88"/>
+              <!-- シナプス接続 -->
+              <path d="M87 92 L100 101 L113 92 M87 110 L100 101 L113 110 M87 92 L87 110 M113 92 L113 110" stroke="#c9a84c" stroke-width="1.3" opacity="0.5"/>
+              <!-- バージョンアップバッジ -->
+              <circle cx="160" cy="56" r="17" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M154 56h12M160 50v12" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+              <!-- チェックバッジ × 2 -->
+              <circle cx="164" cy="148" r="10" fill="rgba(201,168,76,0.15)" stroke="#c9a84c" stroke-width="1.8"/>
+              <path d="M160 148l3.5 3.5 7-7" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="147" cy="163" r="10" fill="rgba(201,168,76,0.15)" stroke="#c9a84c" stroke-width="1.8"/>
+              <path d="M143 163l3.5 3.5 7-7" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
         </div>
@@ -197,9 +277,15 @@
           <div class="svc-card__icon">
             <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="40" cy="40" r="36" fill="rgba(201,168,76,0.12)"/>
-              <circle cx="40" cy="30" r="12" stroke="#c9a84c" stroke-width="2.5"/>
-              <path d="M20 65c0-11 9-20 20-20s20 9 20 20" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M54 36l4 4 8-8" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- コンサルタント人物 -->
+              <circle cx="28" cy="27" r="9" stroke="#c9a84c" stroke-width="2.5"/>
+              <path d="M11 53c0-10 8-17 17-17s17 7 17 17" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- AIドキュメント -->
+              <rect x="47" y="18" width="20" height="26" rx="2" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M51 26h12M51 31h8M51 36h12" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- 完了チェックバッジ -->
+              <circle cx="57" cy="57" r="11" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M51 57l5 5 9-9" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <h3 class="svc-card__title">AI導入<br>コンサルティング</h3>
@@ -213,11 +299,23 @@
           <div class="svc-card__icon">
             <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="40" cy="40" r="36" fill="rgba(201,168,76,0.12)"/>
-              <rect x="18" y="25" width="20" height="16" rx="3" stroke="#c9a84c" stroke-width="2.5"/>
-              <rect x="42" y="25" width="20" height="16" rx="3" stroke="#c9a84c" stroke-width="2" stroke-dasharray="3 2"/>
-              <rect x="18" y="47" width="20" height="16" rx="3" stroke="#c9a84c" stroke-width="2" stroke-dasharray="3 2"/>
-              <rect x="42" y="47" width="20" height="16" rx="3" stroke="#c9a84c" stroke-width="2.5"/>
-              <path d="M38 33h4M38 55h4M28 41v-2M52 41v-2" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+              <!-- 大ギア -->
+              <circle cx="32" cy="36" r="13" stroke="#c9a84c" stroke-width="2.5"/>
+              <circle cx="32" cy="36" r="5" fill="rgba(201,168,76,0.28)" stroke="#c9a84c" stroke-width="2"/>
+              <!-- 大ギアの歯 -->
+              <rect x="29" y="20" width="6" height="5" rx="1" fill="#c9a84c" opacity="0.7"/>
+              <rect x="29" y="47" width="6" height="5" rx="1" fill="#c9a84c" opacity="0.7"/>
+              <rect x="16" y="33" width="5" height="6" rx="1" fill="#c9a84c" opacity="0.7"/>
+              <rect x="43" y="33" width="5" height="6" rx="1" fill="#c9a84c" opacity="0.7"/>
+              <!-- 小ギア -->
+              <circle cx="54" cy="52" r="9" stroke="#c9a84c" stroke-width="2"/>
+              <circle cx="54" cy="52" r="3.5" fill="rgba(201,168,76,0.28)" stroke="#c9a84c" stroke-width="1.5"/>
+              <rect x="51.5" y="41" width="5" height="4" rx="1" fill="#c9a84c" opacity="0.6"/>
+              <rect x="51.5" y="59" width="5" height="4" rx="1" fill="#c9a84c" opacity="0.6"/>
+              <rect x="61" y="49.5" width="4" height="5" rx="1" fill="#c9a84c" opacity="0.6"/>
+              <!-- 自動化フロー矢印 -->
+              <path d="M50 24 Q64 30 62 43" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" fill="none" stroke-dasharray="3 2"/>
+              <path d="M59 42 L62 44 L62 39" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <h3 class="svc-card__title">業務フロー<br>自動化</h3>
@@ -231,11 +329,20 @@
           <div class="svc-card__icon">
             <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="40" cy="40" r="36" fill="rgba(201,168,76,0.12)"/>
-              <rect x="16" y="22" width="34" height="26" rx="4" stroke="#c9a84c" stroke-width="2.5"/>
-              <path d="M16 52l6-6h28" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="58" cy="52" r="10" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"/>
-              <path d="M54 52h8M58 48v8" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-              <path d="M24 32h18M24 38h12" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+              <!-- ユーザーチャットバブル -->
+              <rect x="11" y="15" width="40" height="28" rx="5" stroke="#c9a84c" stroke-width="2.5"/>
+              <path d="M17 44 L13 56 L30 48" stroke="#c9a84c" stroke-width="2" stroke-linejoin="round" fill="none"/>
+              <!-- テキスト行 -->
+              <path d="M17 24h28M17 30h20M17 36h28" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+              <!-- ボット返答バブル -->
+              <rect x="32" y="48" width="36" height="20" rx="4" fill="rgba(201,168,76,0.15)" stroke="#c9a84c" stroke-width="2"/>
+              <!-- タイピングドット -->
+              <circle cx="43" cy="58" r="2.5" fill="#c9a84c" opacity="0.55"/>
+              <circle cx="50" cy="58" r="2.5" fill="#c9a84c" opacity="0.78"/>
+              <circle cx="57" cy="58" r="2.5" fill="#c9a84c"/>
+              <!-- AIバッジ -->
+              <circle cx="65" cy="25" r="9" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="1.8"/>
+              <path d="M62 27h6M65 22v6" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
             </svg>
           </div>
           <h3 class="svc-card__title">チャットボット<br>構築</h3>
@@ -249,10 +356,20 @@
           <div class="svc-card__icon">
             <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="40" cy="40" r="36" fill="rgba(201,168,76,0.12)"/>
-              <rect x="20" y="28" width="40" height="28" rx="3" stroke="#c9a84c" stroke-width="2.5"/>
-              <path d="M20 36h40" stroke="#c9a84c" stroke-width="2"/>
-              <path d="M28 32h2M34 32h2" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-              <path d="M30 46l4 4 8-8" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- ラップトップ本体 -->
+              <rect x="11" y="20" width="50" height="34" rx="3" stroke="#c9a84c" stroke-width="2.5"/>
+              <rect x="14" y="23" width="44" height="28" rx="1" fill="rgba(201,168,76,0.08)"/>
+              <!-- 画面：上昇グラフ -->
+              <path d="M19 46 L27 36 L35 41 L45 28 L55 34" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="19" cy="46" r="2" fill="#c9a84c"/>
+              <circle cx="55" cy="34" r="2" fill="#c9a84c"/>
+              <!-- ラップトップベース -->
+              <path d="M7 54 L11 54 L61 54 L65 54" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M22 54 L24 60 L48 60 L50 54" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- 電球（学習・アイデア） -->
+              <circle cx="63" cy="23" r="10" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"/>
+              <path d="M59 22c0-2.4 1.8-4.3 4-4.3s4 1.9 4 4.3c0 1.6-.8 3-2 3.8V27h-4v-1.2c-1.2-.8-2-2.2-2-3.8z" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M61 27h4" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
           <h3 class="svc-card__title">AIツール<br>研修</h3>
